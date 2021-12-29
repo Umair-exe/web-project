@@ -40,8 +40,8 @@ const Body = () => {
 
             </div>
 
-            <div className='bg-black text-white flex flex-col items-center space-y-3 space-x-6 sm:space-y-0 sm:flex-row justify-center sm:justify-evenly px-0 py-20 sm:px-96 sm:py-20 '>
-                <div className='flex flex-col justify-center items-center'>
+            <div className='bg-black text-white flex flex-col items-center space-y-3  sm:space-y-0 sm:flex-row justify-center sm:justify-around px-0 py-20 sm:px-96 sm:py-20 '>
+                <div className='flex flex-col justify-center items-center flex-[0.5] '>
                     <img className='transition transition-0 hover:transition-duration-700 hover:-translate-y-1 hover:scale-110 ease-in-out ' src="https://www.stormfiber.com/wp-content/uploads/2016/12/phone.png" alt="pic" />
                     <h1 className='text-3xl text-sky-500 font-bold transition transition-150 ease-in-out mt-3 text-center'>A WHOLE NEW</h1>
                     <h1 className='text-3xl font-light  text-sky-500 transition transition-150 ease-in-out text-center'>HERE THE DIFFERENCE</h1>
@@ -50,7 +50,7 @@ const Body = () => {
                     </p>
                     <button className='p-2 mt-4 shadow shadow-sky-600 hover:border-sky-500 hover:opacity-75 px-8 bg-sky-500 text-white font-bold'>MORE INFO</button>
                 </div>
-                <div className='flex flex-col justify-center items-center '>
+                <div className='flex flex-col justify-center text-center items-center flex-[0.5] '>
                     <img className='transition transition-0 hover:transition-duration-700 hover:-translate-y-1 hover:scale-110 ease-in-out' src="https://www.stormfiber.com/wp-content/uploads/2016/12/pc.png" alt="pic" />
                     <h1 className='text-3xl  text-sky-500  font-bold transition transition-150 ease-in-out mt-3 text-center'>High Quality Television Service</h1>
                     <h1 className='text-3xl font-light  text-sky-500 transition transition-150 ease-in-out text-center'>HERE THE DIFFERENCE</h1>
