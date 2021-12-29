@@ -11,23 +11,23 @@ const Slider = () => {
     ];
 
     return (
-        <div className='bg-cyan-900'>
+        <div className='bg-stone-900'>
             <div className="slide-container">
                 <Fade>
                     <div className="each-fade">
                         <div>
-                            <img src={fadeImages[0]} />
+                            <img src={fadeImages[0]} alt='banner'/>
                         </div>
                        
                     </div>
                     <div className="each-fade">
                         <div>
-                            <img src={fadeImages[1]} />
+                            <img src={fadeImages[1]} alt='banner'/>
                         </div>
                     </div>
                     <div className="each-fade">
                         <div>
-                            <img src={fadeImages[2]} />
+                            <img src={fadeImages[2]} alt='banner'/>
                         </div>
                 
                     </div>
