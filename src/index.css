@@ -2,3 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "react-slideshow-image/dist/styles.css"

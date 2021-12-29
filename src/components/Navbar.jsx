@@ -3,7 +3,7 @@ import CallIcon from '@material-ui/icons/Call';
 
 const Navbar = () => {
     return (
-        <div className='flex justify-evenly items-center p-0 sm:p-5 bg-stone-900 text-white top-0 sticky z-10'>
+        <div className='flex justify-evenly items-center p-0 sm:p-5 bg-stone-900 text-white top-0 sticky z-20 transition transition-duration-500'>
             <div className='text-3xl font-bold cursor-pointer'>
                 <h1 >Logo</h1>
             </div>

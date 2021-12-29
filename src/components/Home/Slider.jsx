@@ -1,40 +1,40 @@
-import React, { useState } from 'react'
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import styles from './Slider.module.css';
+import React from 'react';
+import { Fade } from 'react-slideshow-image';
+import './Slider.css';
+
 
 const Slider = () => {
-    const [index, setIndex] = useState(0);
-
-    const images = [
+    const fadeImages = [
         'https://www.stormfiber.com/wp-content/uploads/2019/12/text-100-50-30-mbps-slider.png',
-    ]
+        'https://www.stormfiber.com/wp-content/uploads/2019/12/text-100-50-30-mbps-slider.png',
+        'https://www.stormfiber.com/wp-content/uploads/2019/12/text-100-50-30-mbps-slider.png'
+    ];
 
-    const handleArrow = (direction) =>{
-        if(direction==="l"){
-            setIndex(index !== 0 ? index-1 : 2)
-        }
-        if(direction==="r"){
-            setIndex(index !== 2 ? index+1 : 0)
-        }
-    }
     return (
-        <div className={styles.container}>
-            <div className='cursor-pointer' >
-                <ArrowBackIosIcon style={{fontSize:'50px',color:'white'}} />
-            </div>
-            <div className='flex justify-center transition duration-1000 ease-in-out' style={{transform:`translateX(${-100*index}vw)`}}>
-                {images.map((img, i) => (
-                    <div className='h-full w-full sm:h-5/6 sm:w-5/6  ' key={i}>
-                        <img src={img} alt='banner' />
+        <div className='bg-cyan-900'>
+            <div className="slide-container">
+                <Fade>
+                    <div className="each-fade">
+                        <div>
+                            <img src={fadeImages[0]} />
+                        </div>
+                       
                     </div>
-                ))}
-            </div>
-            <div className='cursor-pointer' >
-                <ArrowForwardIosIcon  style={{fontSize:'50px',color:'white'}} />
+                    <div className="each-fade">
+                        <div>
+                            <img src={fadeImages[1]} />
+                        </div>
+                    </div>
+                    <div className="each-fade">
+                        <div>
+                            <img src={fadeImages[2]} />
+                        </div>
+                
+                    </div>
+                </Fade>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Slider
+export default Slider;
