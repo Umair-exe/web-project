@@ -6,35 +6,16 @@ import './Slider.css';
 const Slider = () => {
     const fadeImages = [
         'https://www.stormfiber.com/wp-content/uploads/2019/12/text-100-50-30-mbps-slider.png',
-        'https://www.stormfiber.com/wp-content/uploads/2019/12/text-100-50-30-mbps-slider.png',
         'https://www.stormfiber.com/wp-content/uploads/2019/12/text-100-50-30-mbps-slider.png'
     ];
 
     return (
-        <div className='bg-stone-900'>
-            <div className="slide-container">
-                <Fade>
-                    <div className="each-fade">
-                        <div>
-                            <img src={fadeImages[0]} alt='banner'/>
-                        </div>
-                       
-                    </div>
-                    <div className="each-fade">
-                        <div>
-                            <img src={fadeImages[1]} alt='banner'/>
-                        </div>
-                    </div>
-                    <div className="each-fade">
-                        <div>
-                            <img src={fadeImages[2]} alt='banner'/>
-                        </div>
-                
-                    </div>
-                </Fade>
-            </div>
+        <div  className=' flex justify-center p-20 text-4xl font-extrabold bg-no-repeat bg-cover bg-center bg-fixed bg-gradient-to-r from-cyan-500 to-blue-500 sm:text-5xl sm:p-40'>
+            <h1>Home</h1>
         </div>
     );
 };
 
 export default Slider;
+
+

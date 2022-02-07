@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <div className='mt-48 bg-stone-900 text-white flex flex-col sm:flex-row sm:justify-evenly items-center space-y-3 sm:space-y-0  px-0 py-20 sm:px-96 sm:py-20 '>
-                <div className='flex sm:flex-col flex-row text-sm sm:text-lg space-y-0 sm:space-y-2 p-2 space-x-3 sm:space-x-0 '>
+            <div className='mt-20 bg-stone-900 text-white flex flex-col sm:flex-row sm:justify-evenly items-center space-y-3 sm:space-y-0  px-0 py-20 sm:px-96 sm:py-20 '>
+                <div className='flex  sm:flex-col flex-row text-sm sm:text-lg space-y-0 sm:space-y-2 p-2 invisible sm:visible '>
                     <h1 className='hover:transition hover:duration-300  cursor-pointer hover:bg-white hover:text-black '>HOME</h1>
                     <h1 className='hover:transition hover:duration-300  cursor-pointer hover:bg-white hover:text-black ' >ABOUT US</h1>
                     <h1 className='hover:transition hover:duration-300  cursor-pointer hover:bg-white hover:text-black '>PLANS</h1>

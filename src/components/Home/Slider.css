@@ -3,11 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding: 40px;  
 }
 
 .each-fade > div {
-  width: 75%;
+  width: 80%;
+  height: 50%;
 }
 
 .each-fade > div img {
